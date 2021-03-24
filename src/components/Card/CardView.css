@@ -1,0 +1,155 @@
+.wrapper {
+  margin: 0px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.wrapper > div {
+  margin: 10px;
+}
+.cardImg {
+  border: 1px solid black;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.cardImgInViewMode {
+  overflow: hidden;
+}
+.cardImageBig {
+  max-width: 900px;
+}
+
+.cardImageMedium {
+  align-self: center;
+  max-width: 900px;
+}
+
+.cardImageSmall {
+  width: 175px;
+  height: 232px;
+}
+
+.cardImageBig img,
+.cardImageMedium img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: contain;
+}
+.cardImageSmall img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+.card-view-container > .card-view-left {
+  max-width: 580px;
+}
+
+.cardViewImg img {
+  display: block;
+}
+
+.card-view-container {
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.card-view-left {
+  margin-right: 20px;
+}
+.card-view-right {
+  align-self: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.card-view-right > div {
+  margin: 5px;
+}
+.card-view-right > .flexcolumn {
+  margin: 0px;
+}
+.card-view-header {
+  display: block;
+}
+
+.ribbon-new {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 75px;
+  height: 75px;
+}
+
+.product-description {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 1435px) {
+  .flexcolumn {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1169px) {
+}
+
+@media only screen and (max-width: 801px) {
+  .svg-container {
+    display: none;
+  }
+  .bio_container {
+    flex-direction: column;
+  }
+  .bio-right {
+    display: flex;
+    margin: 10px 0 0 0;
+  }
+  .bio-left {
+    width: 100% !important;
+  }
+
+  .bio_container > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .websites_wrapper {
+    justify-content: center;
+  }
+  .header_wrapper {
+    text-align: center;
+    flex-direction: column;
+  }
+  .kasdeb-svg {
+    margin: 0 auto;
+  }
+  .nav_menu ul {
+    display: flex;
+  }
+  .nav_menu ul > a {
+    margin-right: 20px;
+  }
+  .nav_menu {
+    margin: 0;
+  }
+  .nav_menu:first-of-type {
+    margin-left: 0px;
+  }
+
+  .exp-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_headline {
+    font-size: 28px;
+  }
+}

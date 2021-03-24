@@ -1,0 +1,24 @@
+.nav_wrapper {
+  margin: auto 0;
+}
+
+.nav_menu {
+  display: inline-block;
+  margin: 0 25px;
+  backface-visibility: hidden;
+}
+.nav_menu:first-of-type {
+  display: inline-block;
+  margin-left: 60px;
+}
+.nav_menu ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+.nav_menu a {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}

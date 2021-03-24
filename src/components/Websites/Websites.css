@@ -1,0 +1,57 @@
+.card {
+  height: 232px;
+  width: 175px;
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.card .title_wrapper {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent url(../../img/svg/hexagon_white.svg) no-repeat 50% 50%/130px
+    auto;
+  height: 130px;
+  width: 130px;
+}
+.hex-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.card .title_wrapper h2 {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #414042;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.card .title_wrapper h3 {
+  display: block;
+  font-size: 13px;
+  color: #b1b3b6;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.websites_wrapper {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px; /* this */
+}
+
+.websites_wrapper > div {
+  flex: 0 1 auto;
+  text-align: center;
+  /* and that, will result in a 10px gap */
+  margin: 10px;
+}
